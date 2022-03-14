@@ -19,17 +19,9 @@ let hour = addZero(now.getHours());
 let minutes = addZero(now.getMinutes());
 let dateFormat = `${day} ${hour}:${minutes}`;
 
-function capitalize(city) {
-  return city && city[0].toUpperCase() + city.slice(1);
-}
-
 function replaceText(event) {
   event.preventDefault();
-  let city = document.querySelector("#search-bar");
-  let h1 = document.querySelector("h1");
   let searchDate = document.querySelector(".search-date");
-  let capitalCity = capitalize(city.value);
-  h1.innerHTML = `${capitalCity}`;
   searchDate.innerHTML = `${dateFormat}`;
 }
 

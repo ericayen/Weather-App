@@ -3,6 +3,14 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f3bc26;
+}
+
 .card {
   margin: 0 auto;
   border-color: rgb(33, 82, 189, 0.6);
@@ -10,32 +18,43 @@ body {
   height: 39rem;
 }
 
+.card-title {
+  color: #006ec5;
+}
+
 #city-search {
   width: 100%;
 }
 
-#search-bar {
-  border-color: rgb(113, 161, 206, 0.3);
-  border-radius: 10px;
+.current-temp {
+  text-align: center;
+  padding: 10px;
 }
 
-#search-button,
-#location-button {
-  color: black;
-  background-color: rgb(113, 161, 206, 0.3);
-  border-color: rgba(16, 91, 167, 0.5);
-  border-radius: 10px;
-  margin: 0 0 0 15px;
-  color: rgb(77, 73, 73);
+.emoji {
+  font-size: 42px;
 }
 
-#location-button {
-  background-color: #f3bc26;
-  border-color: #f3bc26;
+footer {
+  margin: 10px;
 }
 
-#location-arrow {
-  color: rgb(77, 73, 73);
+.forecast-card {
+  background-color: #f8fcff;
+  margin: 0;
+  padding: 0;
+  height: 190px;
+}
+
+.forecast-desc {
+  margin: 0;
+  color: #006ec5;
+  font-weight: normal;
+}
+
+.forecast-temp {
+  padding: 10px;
+  margin: 0;
 }
 
 h1 {
@@ -45,6 +64,40 @@ h1 {
   color: #006ec5;
   margin: -10px;
   padding: 0;
+}
+
+#location-arrow {
+  color: rgb(77, 73, 73);
+}
+
+#location-button {
+  background-color: #f3bc26;
+  border-color: #f3bc26;
+  border-radius: 10px;
+  margin: 0 0 0 15px;
+  color: rgb(77, 73, 73);
+}
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row > * {
+  width: auto;
+}
+
+#search-bar {
+  border-color: rgb(113, 161, 206, 0.3);
+  border-radius: 10px;
+}
+
+#search-button {
+  color: black;
+  background-color: rgb(113, 161, 206, 0.3);
+  border-color: rgba(16, 91, 167, 0.5);
+  border-radius: 10px;
+  margin: 0 0 0 15px;
 }
 
 .search-date {
@@ -67,49 +120,4 @@ h1 {
   font-weight: 200;
   color: #006ec5;
   padding: 0;
-}
-
-.current-temp {
-  text-align: center;
-  padding: 10px;
-}
-
-#celsius,
-#fahrenheit {
-  text-decoration: none;
-}
-
-.row > * {
-  width: auto;
-}
-
-.forecast-card {
-  background-color: #f8fcff;
-  margin: 0;
-  padding: 0;
-  height: 190px;
-}
-
-.card-title {
-  color: #006ec5;
-}
-
-.padding-0 {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.emoji {
-  font-size: 42px;
-}
-
-.forecast-desc {
-  margin: 0;
-  color: #006ec5;
-  font-weight: normal;
-}
-
-.forecast-temp {
-  padding: 10px;
-  margin: 0;
 }

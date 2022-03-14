@@ -60,8 +60,13 @@ function geoPosition(response) {
 }
 navigator.geolocation.getCurrentPosition(geoPosition);
 
+function getPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(geoPosition);
+}
+
 let currentLocation = document.querySelector("#location-button");
-currentLocation.addEventListener("click", geoPosition);
+currentLocation.addEventListener("click", getPosition);
 
 function citySearch(response) {
   let city = document.getElementById("search-bar").value;
